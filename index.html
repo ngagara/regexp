@@ -23,16 +23,16 @@
                         <input class="form__input" type="text" name="name" pattern="[А-ЯЁ][а-яё]+(-[А-ЯЁ][а-яё]+)?" placeholder="Имя" minlength="2" maxlength="20" required />
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="email" pattern="((\w+[-.]\w+[-.]*)*|(\w+))@((\w+)|(\w+[-]\w+[-]*))(\.\w{2,})+" placeholder="E-Mail" required />
+                        <input class="form__input" type="text" name="email" pattern="((\w+[-.]\w+)*|(\w+))@((\w+)|(\w+[-]\w+)*)(\.\w{2,})+" placeholder="E-Mail" required />
                         <span class="form__error">e-mail в формате: students-yandex@yandex.ru</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="" minlength="" maxlength="18"  required/>
+                        <input class="form__input" type="text" name="tel" placeholder="Телефон" pattern="(\d{11})|(\+7\d{10})|(\+7\s\d{3}-\d{3}-\d{2}-\d{2})|(\+7\s?\(\d{3}\)\s?\d{3}-\d{2}-\d{2})" minlength="11" maxlength="18"  required/>
                         <span class="form__error">Недопустимый формат номера</span>
                     </div>
                     <div class="form__field">
-                        <input class="form__input" type="text" name="url" pattern="" placeholder="Ваш сайт" required/>
-                        <span class="form__error">URL в формате: http://mysite.ru</span>
+                        <input class="form__input" type="text" name="url" pattern="https?:\/\/(((w{3}\.)*[a-z0-9]{1,}(\.[a-z]{2,}[-]?)+(:\d{2,5}\/?)*((\/?[a-z]{1,}){1,}\/?#?)*)|(\d{1,3}\.){3}\d{1,3}(:\d{2,5})*((\/?[a-z]{1,}){1,})*#?)" placeholder="Ваш сайт" required/>
+                        <span class="form__error">URL в формате:| http://mysite.ru</span>
                     </div>
                     <button class="form__button" type="text">Отправить</button>
                 </fieldset>
@@ -41,3 +41,7 @@
     </main>     
 </body>
 </html>
+
+<!-- 
+    (https?:\/\/(\w{3}\.)?(((\w+[-]?\w+[-]?)*(\.\w{2,})*(\/?:?\w+\-?\/?)*)\/?)|((\d{1,3}\.*)*:\d{2,5}\/?(\/?\w+\/?)*#?))
+ -->
