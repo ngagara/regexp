@@ -36,4 +36,4 @@ Email:
 - http://8.8.8.8:8080
 - http://8.8.8.8:8080/page/to/deep#
 
-Ссылка на рабочую версию формы: https://ngagara.github.io/regexp.github.io/
+Ссылка на рабочую версию формы: https://ngagara.github.io/regexp/
